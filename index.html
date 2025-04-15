@@ -565,39 +565,92 @@ MS Excel
 	            <p><a >Aligarh , Uttarpradeh </a></p>
 	          </div>
           </div>-->
-          <div class="d-flex flex-wrap justify-content-center">
+          <style>
+  .contact-box {
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    min-width: 250px;
+  }
+
+  .contact-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .contact-box .icon {
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    transition: background 0.3s;
+  }
+
+  .contact-box:hover .icon {
+    background: #0b5ed7;
+  }
+
+  .contact-box h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .contact-box p a {
+    color: #0d6efd;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .contact-box p a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .contact-box {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="d-flex flex-wrap justify-content-center gap-3">
 
   <div class="col-md-6 col-lg-3 d-flex ftco-animate m-2">
-    <div class="align-self-stretch box p-4 text-center w-100">
+    <div class="contact-box box p-4 text-center w-100">
       <div class="icon d-flex align-items-center justify-content-center">
         <span class="icon-phone2"></span>
       </div>
-      <h3 class="mb-4">Contact Number</h3>
-      <p><a href="tel://7488663980">+91 7488663980</a></p>
+      <h3 class="mb-3">Contact Number</h3>
+      <p><a href="tel:+917488663980">+91 7488663980</a></p>
     </div>
   </div>
 
   <div class="col-md-6 col-lg-3 d-flex ftco-animate m-2">
-    <div class="align-self-stretch box p-4 text-center w-100">
+    <div class="contact-box box p-4 text-center w-100">
       <div class="icon d-flex align-items-center justify-content-center">
         <span class="icon-paper-plane"></span>
       </div>
-      <h3 class="mb-4">Email Address</h3>
+      <h3 class="mb-3">Email Address</h3>
       <p><a href="mailto:md0368690@gmail.com">md0368690@gmail.com</a></p>
     </div>
   </div>
 
   <div class="col-md-6 col-lg-3 d-flex ftco-animate m-2">
-    <div class="align-self-stretch box p-4 text-center w-100">
+    <div class="contact-box box p-4 text-center w-100">
       <div class="icon d-flex align-items-center justify-content-center">
         <span class="icon-globe"></span>
       </div>
-      <h3 class="mb-4">Download CV</h3>
-      <p><a href="https://drive.google.com/file/d/1ncGacxSzC-mLwgZT598TMknuqsY5UESQ/view?usp=drive_link">resumelink</a></p>
+      <h3 class="mb-3">Download CV</h3>
+      <p><a href="https://drive.google.com/file/d/1ncGacxSzC-mLwgZT598TMknuqsY5UESQ/view?usp=drive_link" target="_blank">View Resume</a></p>
     </div>
   </div>
 
 </div>
+
 
 
 		  <div class="container">
