@@ -4,6 +4,37 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ .btn-download-cv {
+  background-color: #ffb236; /* Button color (yellow-orange) */
+  color: #000;               /* Black text */
+  padding: 10px 30px;
+  border-radius: 50px;       /* Rounded corners */
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download-cv:hover {
+  background-color: #e09e2d; /* Slightly darker on hover */
+}
+.btn-link {
+  background-color: #ffb236;
+  color: #000;
+  padding: 8px 20px;  /* Smaller padding */
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-size: 14px;  /* Slightly smaller text */
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #e09e2d;
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
