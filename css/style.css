@@ -35,6 +35,85 @@
 .btn-link:hover {
   background-color: #e09e2d;
 }
+.contact-box {
+  transition: all 0.4s ease-in-out; /* Slightly longer and smoother transition */
+  background-color: #000000;
+  border-radius: 20px 5px 20px 5px; /* Asymmetrical border-radius for a softer, unique shape */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(13, 110, 253, 0.1); /* Added a subtle colored outer glow */
+  min-width: 260px; /* Slightly increased minimum width */
+  padding: 25px; /* Added some internal padding */
+  display: flex; /* Using flexbox for internal alignment */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative; /* For potential future absolute positioning of elements */
+}
+
+.contact-box:hover {
+  transform: translateY(-10px) scale(1.02); /* More pronounced lift and slight scale */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(13, 110, 253, 0.2); /* More intense shadow and glow on hover */
+}
+
+.contact-box .icon {
+  font-size: 35px; /* Slightly larger icon */
+  height: 65px; /* Larger icon container */
+  width: 65px; /* Larger icon container */
+  background: linear-gradient(
+    45deg,
+    #0d6efd,
+    #0b5ed7
+  ); /* Gradient background for icon */
+  color: #000000;
+  border-radius: 50%;
+  margin: 0 auto 20px; /* Increased margin below icon */
+  display: flex; /* Flexbox for centering icon */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for the icon itself */
+  transition: all 0.3s ease;
+}
+
+.contact-box:hover .icon {
+  background: linear-gradient(
+    45deg,
+    #0b5ed7,
+    #0d6efd
+  ); /* Invert gradient on hover */
+  transform: rotate(5deg) scale(1.1); /* Slight rotation and scale on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-box h3 {
+  font-weight: 700; /* Bolder heading */
+  font-size: 22px; /* Slightly larger heading */
+  color: #222; /* Darker text for better contrast */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.contact-box p {
+  line-height: 1.6; /* Improved readability for paragraphs */
+  color: #555;
+  margin-bottom: 15px; /* Space below paragraph */
+}
+
+.contact-box p a {
+  color: #0a58ca; /* Slightly darker blue for link */
+  font-weight: 600; /* Bolder link text */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-box p a:hover {
+  text-decoration: underline;
+  color: #0747a6; /* Even darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-bottom: 20px; /* Add margin between boxes on mobile */
+  }
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
